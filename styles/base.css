@@ -72,6 +72,6 @@ main {
 
 @media (min-width: 640px) {
     nav ul {
-        justify-content: space-between; 
+        justify-content: space-around;
     }
 }
