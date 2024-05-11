@@ -55,6 +55,14 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.card img {
+  margin-right: 20px; 
+}
+
+.card p {
+  flex-grow: 1; 
+}
+
 footer {
   background-color: #007bff;
   color: #fff;
