@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        gap: 1rem; /* Space between grid items */
+        max-width: 1200px; /* Maximum width */
+        margin: 1rem auto; /* Center the grid */
+        justify-items: center; /* Center grid items horizontally */
+    }
+
+    figure {
+        margin: 0;
+        text-align: center;
+    }
+}
+
