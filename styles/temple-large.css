@@ -10,11 +10,11 @@
 
     main {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Three columns */
-        gap: 1rem; /* Space between grid items */
-        max-width: 1200px; /* Maximum width */
-        margin: 1rem auto; /* Center the grid */
-        justify-items: center; /* Center grid items horizontally */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem; 
+        max-width: 1200px; 
+        margin: 1rem auto;
+        justify-items: center; 
     }
 
     figure {
