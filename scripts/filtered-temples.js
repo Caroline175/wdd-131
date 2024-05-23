@@ -106,7 +106,7 @@ const temples = [
 
 function displayTemples(filteredTemples) {
     const container = document.getElementById('templeContainer');
-    container.innerHTML = ''; // Clear previous content
+    container.innerHTML = ''; 
     filteredTemples.forEach(temple => {
       const templeDiv = document.createElement('div');
       templeDiv.className = 'temple';
