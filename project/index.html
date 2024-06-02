@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Explorer</title>
+    <title>Trip Ideas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,39 +11,44 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="destination1.html">Destination 1</a></li>
-                <li><a href="destination2.html">Destination 2</a></li>
-                <li><a href="destination3.html">Destination 3</a></li>
+                <li><a href="destination1.html">Family Trips</a></li>
+                <li><a href="destination2.html">Solo Trips</a></li>
+                <li><a href="destination3.html">Tropical Resorts</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Welcome to Travel Explorer</h1>
-        <p>Discover your next vacation destination!</p>
-        <div class="destinations">
-            <div class="destination">
-                <a href="destination1.html">
-                    <img src="images/destination1.jpg" alt="Destination 1" loading="lazy">
-                    <h2>Destination 1</h2>
-                </a>
+        <h1>Plan a Trip!</h1>
+        
+        <div class="trip-grid">
+            <div class="trip">
+                <img src="trip1.jpg" alt="Family Trip Image">
+                <div class="details">
+                    <h2>Family Trips</h2>
+                    <p>Experience the breathtaking views and serene environment of the mountains. Perfect for hiking, camping, and reconnecting with nature.</p>
+                </div>
             </div>
-            <div class="destination">
-                <a href="destination2.html">
-                    <img src="images/destination2.jpg" alt="Destination 2" loading="lazy">
-                    <h2>Destination 2</h2>
-                </a>
+
+            <div class="trip">
+                <img src="project/download (13).jpg" alt="Solo Trips Image">
+                <div class="details">
+                    <h2>Solo Trips</h2>
+                    <p>Relax and unwind on the sandy beaches with clear blue waters. Ideal for swimming, sunbathing, and water sports.</p>
+                </div>
             </div>
-            <div class="destination">
-                <a href="destination3.html">
-                    <img src="images/destination3.jpg" alt="Destination 3" loading="lazy">
-                    <h2>Destination 3</h2>
-                </a>
+
+            <div class="trip">
+                <img src="project/tropical resort 1.jpg" alt="Tropical Resort Images">
+                <div class="details">
+                    <h2>Tropical Resorts</h2>
+                    <p>Discover the vibrant life of the city with its rich culture, historic landmarks, <br> and bustling nightlife. Great for sightseeing and urban exploration.</p>
+                </div>
             </div>
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 Travel Explorer</p>
+        <p>&copy; <span id="year"></span> | <span id="last-modified"></span> Caroline Avance 2024 *cost of flights not included in price*</p>
+        <script src="project/script.js"></script>
     </footer>
-    <script src="js/script.js"></script>
 </body>
 </html>

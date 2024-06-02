@@ -105,38 +105,35 @@ const temples = [
 ];
 
 function displayTemples(filteredTemples) {
-    const container = document.getElementById('templeContainer');
-    container.innerHTML = ''; 
-    filteredTemples.forEach(temple => {
-      const templeDiv = document.createElement('div');
-      templeDiv.className = 'temple';
-      templeDiv.textContent = `${temple.name} - Built: ${temple.yearBuilt} - Size: ${temple.size} sq ft`;
-      container.appendChild(templeDiv);
-    });
+  container.innerHTML = ''; 
+  filteredTemples.forEach(temple => {
+    const templeDiv = document.createElement('div');
+    templeDiv.className = 'temple';
+    templeDiv.textContent = `${temple.name} - Built: ${temple.yearBuilt} - Size: ${temple.size} sq ft`;
+    container.appendChild(templeDiv);
+  });
+}
+
+function filterTemples(criteria) {
+  let filteredTemples;
+  switch (criteria) {
+    case 'old':
+      filteredTemples = temples.filter(temple => temple.yearBuilt < 1900);
+      break;
+    case 'new':
+      filteredTemples = temples.filter(temple => temple.yearBuilt > 2000);
+      break;
+    case 'large':
+      filteredTemples = temples.filter(temple => temple.size > 90000);
+      break;
+    case 'small':
+      filteredTemples = temples.filter(temple => temple.size < 10000);
+      break;
+    case 'home':
+    default:
+      filteredTemples = temples;
   }
-  
-  function filterTemples(criteria) {
-    let filteredTemples;
-    switch (criteria) {
-      case 'old':
-        filteredTemples = temples.filter(temple => temple.yearBuilt < 1900);
-        break;
-      case 'new':
-        filteredTemples = temples.filter(temple => temple.yearBuilt > 2000);
-        break;
-      case 'large':
-        filteredTemples = temples.filter(temple => temple.size > 90000);
-        break;
-      case 'small':
-        filteredTemples = temples.filter(temple => temple.size < 10000);
-        break;
-      default:
-        filteredTemples = temples;
-    }
-    displayTemples(filteredTemples);
-  }
-  
-  // Initially display all temples
-  filterTemples('home');
-  
- 
+  displayTemples(filteredTemples);
+}
+
+filterTemples('home');
